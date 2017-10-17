@@ -11,7 +11,8 @@ export class RecipeService
   private  recipes: Recipe[] = [
         new Recipe('Pizza','Chicken Italiano',
         'http://polkacafe.s3.amazonaws.com/articles/thumbs/ti_725_62110769558241.jpg',
-        [ new Ingredient('Bread',2)]),
+        [ new Ingredient('Bread',2),
+        new Ingredient('Cheese',2)]),
         new Recipe('KFC','Chicken meal',
         'https://assets.kfc.co.uk/3f040df6-0c9cdd0f/wicked-variety-bucket-320w.jpeg',
         [ new Ingredient('Chicken',2)]),
