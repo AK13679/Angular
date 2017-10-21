@@ -46,6 +46,13 @@ recipeChanged = new Subject<Recipe[]>();
           this.recipeChanged.next(this.recipes.slice());
       }
 
+      //to set recipes from firebase
+      
+      setRecipe(recipes: Recipe[]){
+        this.recipes = recipes ;
+        this.recipeChanged.next(this.recipes.slice());
+    }
+
       updateRecipe(index: number,newRecipe: Recipe)
       {
             this.recipes[index]= newRecipe;
